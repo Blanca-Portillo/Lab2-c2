@@ -1,21 +1,19 @@
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f44336;
+    background-color: #9ce0f7;
     background-size: cover;
     background-attachment: fixed;
-    color: #a81a1a;
+    color: #000000;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
 
-
 .container {
-    background-color: rgba(32, 10, 10, 0.9); 
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -24,7 +22,6 @@ body {
     margin: 20px auto;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -32,7 +29,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid #030303;
 }
 
 th, td {
@@ -56,20 +53,114 @@ th {
     border-radius: 5px;
     display: flex;
     align-items: center;
+    transition: background 0.3s ease;
 }
+
+
+.actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
 
 .actions a.edit {
-    background-color: #2196F3; 
+    background-color: #2196F3;
 }
+
+.actions a.edit:hover {
+    background-color: #1976D2;
+}
+
 
 .actions a.delete {
-    background-color: #f44336; 
+    background-color: #f44336;
 }
 
-.actions a img {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
+.actions a.delete:hover {
+    background-color: #d32f2f;
 }
 
 
+.actions img {
+    width: 24px;  
+    height: 24px;
+    transition: transform 0.2s;
+}
+
+
+.actions button:hover img {
+    transform: scale(1.1);}
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+        margin-top: auto; 
+    }
+
+.menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-superior a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.menu-superior a.btn-inicio {
+    background-color: #2196F3; 
+    color: rgb(144, 254, 146);
+}
+
+.menu-superior a.btn-crear {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.menu-superior a:hover {
+    opacity: 0.9;
+}
+
+
+.consultar-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.consultar-form label {
+    font-weight: bold;
+}
+
+.consultar-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+.consultar-form button {
+    padding: 8px 15px;
+    background-color: #FF9800; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.consultar-form button:hover {
+    background-color: #F57C00;
+}
