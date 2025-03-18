@@ -27,10 +27,10 @@ $productos = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <td><?php echo $producto['stock']; ?></td>
             <td class="actions">
                 <a href="editar.php?id=<?php echo $producto['id']; ?>" class="edit">
-                   <button> <img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" alt="Editar"> </button>
+                   <button> <img src="https://cdn-icons-png.flaticon.com/512/1160/1160515.png" alt="Editar" width="24" height="24"> </button>
                 </a>
                 <a href="eliminar.php?id=<?php echo $producto['id']; ?>" class="delete">
-                <button><img src="https://cdn.pixabay.com/photo/2021/11/30/00/42/backspace-button-6834137_960_720.png" alt="Eliminar"> </button>
+                <button><img src="https://cdn.pixabay.com/photo/2021/11/30/00/42/backspace-button-6834137_960_720.png" alt="Eliminar" width="24" height="24"> </button>
                 </a>
             </td>
         </tr>
